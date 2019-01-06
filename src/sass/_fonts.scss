@@ -24,6 +24,9 @@
 
 @font-face {
     font-family: 'Recoleta-Bold';
-    src: url('//trisweb.com/webfonts/36D7B2_0_0.eot');
-    src: url('//trisweb.com/webfonts/36D7B2_0_0.eot?#iefix') format('embedded-opentype'), url('webfonts/36D7B2_0_0.woff2') format('woff2'), url('webfonts/36D7B2_0_0.woff') format('woff'), url('webfonts/36D7B2_0_0.ttf') format('truetype');
+    src: url('/assets/webfonts/36D7B2_0_0.eot');
+    src: url('/assets/webfonts/36D7B2_0_0.eot?#iefix') format('embedded-opentype'),
+         url('/assets/webfonts/36D7B2_0_0.woff2') format('woff2'),
+         url('/assets/webfonts/36D7B2_0_0.woff') format('woff'),
+         url('/assets/webfonts/36D7B2_0_0.ttf') format('truetype');
 }

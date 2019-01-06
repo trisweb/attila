@@ -6,6 +6,11 @@
   "engines": {
     "ghost": ">=2.1.0"
   },
+  "scripts": {
+    "start": "grunt watch",
+    "build": "grunt build",
+    "deploy": "grunt build && ./deploy"
+  },
   "license": "MIT",
   "screenshots": {
     "desktop": "src/screenshot-desktop.jpg",
