@@ -1,11 +1,10 @@
 /* ==========================================================================
    Includes
    ========================================================================== */
-
+@import "fonts";
 @import "normalize";
 @import "colors";
 @import "icons";
-@import "fonts";
 @import "highlight";
 
 /* ==========================================================================
@@ -34,7 +33,7 @@ html.menu-active,
 }
 
 body {
-	font: 400 2em / 1.5em 'Cardo', serif;
+	font: 400 2em / 1.5em "Libre Baskerville", Garamond, Palatino, "Times New Roman", serif;;
 	color: $color-blue-30;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
@@ -45,7 +44,7 @@ input,
 button,
 select,
 textarea {
-	font-family: 'Fira Sans', sans-serif;
+	font-family: "Libre Baskerville", Garamond, Palatino, "Times New Roman", serif;;
 	transition: all ease-out 0.2s;
 }
 
@@ -61,7 +60,7 @@ a:focus {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Fira Sans', sans-serif;
+	font-family: 'Recoleta-Bold', "Libre Baskerville", Garamond, Palatino, "Times New Roman", serif;;
 	text-rendering: optimizeLegibility;
 	color: $color-black;
 }
@@ -117,7 +116,6 @@ ol > li:before {
 	position: absolute;
 	width: 1.5em;
 	margin-left: -2em;
-	font-family: 'Fira Sans', sans-serif;
 	font-size: 1em;
 	font-weight: 500;
 	line-height: 1.5em;
@@ -191,7 +189,6 @@ dl {
     padding-left: 30px;
 }
 dl dt {
-    font-family: 'Fira Sans', sans-serif;
   	font-weight: 500;
   	font-size: 0.75em;
   	line-height: 1.25em;
@@ -310,7 +307,6 @@ table td {
     border: 1px solid $color-gray-90;
 }
 table th {
-	font-family: 'Fira Sans', sans-serif;
 	font-weight: 500;
 	font-size: 0.75em;
 	line-height: 1.25em;
@@ -364,7 +360,6 @@ img[src$="#full"] {
   }
 
   figcaption {
-    font-family: 'Fira Sans', sans-serif;
     color: $color-blue-60;
     text-align: center;
     max-width: 32em;
@@ -386,7 +381,6 @@ img[src$="#full"] {
   width: 75vw;
 
   figcaption {
-    font-family: 'Fira Sans', sans-serif;
     color: $color-blue-60;
     text-align: center;
     max-width: 32em;
@@ -561,14 +555,14 @@ img[src$="#full"] {
 	z-index: 10;
 	margin: 0;
 	padding: 0;
-	font-family: 'Fira Sans', sans-serif;
+	font-family: "Recoleta-Bold", "Libre Baskerville", Garamond, Palatino, "Times New Roman", serif;
 	font-weight: 700;
 	font-size: 2em;
 	line-height: 1em;
 	text-decoration: none;
 }
 .home-template .blog-name {
-	font-size: 3em;
+	font-size: 2.4em;
 }
 .has-cover .blog-name {
 	color: $color-white;
@@ -585,10 +579,10 @@ img[src$="#full"] {
 	margin: 0.25em 0;
 	padding: 0;
 	font-size: 1em;
-	line-height: 1.5em;
+	line-height: 1.4em;
 }
 .home-template .blog-description {
-	font-size: 1.5em;
+	font-size: 1.25em;
 }
 .has-cover .blog-description {
 	color: $color-white;
@@ -645,7 +639,7 @@ img[src$="#full"] {
 	margin-bottom: 1em;
 	padding: 0.5em 1.25em;
 	border: 1px solid $color-blue-80;
-	font-family: 'Fira Sans', sans-serif;
+	font-family: "Libre Baskerville", Garamond, Palatino, "Times New Roman", serif;
 	font-size: 0.75em;
 	line-height: 1.667em;
 	text-shadow: none;
@@ -694,7 +688,7 @@ img[src$="#full"] {
 	border-left: 1px solid $color-gray-90;
 	z-index: 400;
 	overflow: hidden;
-	font-family: 'Fira Sans', sans-serif;
+	font-family: "Libre Baskerville", Garamond, Palatino, "Times New Roman", serif;
 	box-shadow: inset -2px 0 7px rgba(0,0,0,0.1);
 	transform: translate3d(16em,0,0);
 	transition: all ease-out 0.25s;
@@ -850,7 +844,7 @@ img[src$="#full"] {
 #footer {
 	position: relative;
 	z-index: 20;
-	font-family: 'Fira Sans', sans-serif;
+	font-family: "Libre Baskerville", Garamond, Palatino, "Times New Roman", serif;
 	line-height: 1em;
 	padding-bottom: 6em;
 }
@@ -1035,7 +1029,6 @@ img[src$="#full"] {
 	z-index: 10;
 	display: block;
 	margin-bottom: 1.334em;
-	font-family: 'Fira Sans', sans-serif;
 	font-size: 0.75em;
 	font-weight: 400;
 	line-height: 1.334em;
@@ -1174,7 +1167,6 @@ img[src$="#full"] {
 	border-top: 1px solid $color-gray-90;
 	border-bottom: 1px solid $color-gray-90;
 	clear: both;
-  font-family: 'Fira Sans', sans-serif;
 }
 .post-author-avatar {
 	position: relative;
@@ -1288,7 +1280,6 @@ img[src$="#full"] {
 	margin: 0;
 	padding: 0.5em 1.25em;
 	border: 1px solid $color-blue-80;
-	font-family: 'Fira Sans', sans-serif;
 	font-size: 0.75em;
 	line-height: 1.334em;
 	color: $color-blue-60;
@@ -1453,7 +1444,6 @@ img[src$="#full"] {
 	height: 2em;
 	margin: 0;
 	padding: 2em 0;
-	font-family: 'Fira Sans', sans-serif;
 }
 .pagination:after {
 	position: absolute;
