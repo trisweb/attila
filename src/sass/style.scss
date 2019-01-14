@@ -33,8 +33,8 @@ html.menu-active,
 }
 
 body {
-	font: 400 2em / 1.5em "Libre Baskerville", Garamond, Palatino, "Times New Roman", serif;;
-	color: $color-blue-30;
+	font: 400 1.8em / 1.65em "Libre Baskerville", Garamond, Palatino, "Times New Roman", serif;;
+	color: $color-warmgray-20;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -49,21 +49,21 @@ textarea {
 }
 
 a {
-	color: $color-blue-15;
+	color: $color-warmgray-20;
 	text-decoration: none;
 	font-weight: 400;
 	transition: all ease-out 0.2s;
 }
 a:hover,
 a:focus {
-	color: $color-black;
+	color: $color-warmgray-20;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Recoleta-Bold', "Libre Baskerville", Garamond, Palatino, "Times New Roman", serif;;
 	text-rendering: optimizeLegibility;
   font-weight: normal !important;
-	color: $color-black;
+	color: $color-warmgray-20;
 }
 
 h1 {
@@ -71,6 +71,7 @@ h1 {
 	line-height: 1em;
 	text-indent: -1px;
 	margin: 1em 0 1em;
+  color: $color-warmgray-30;
 }
 
 h2 {
@@ -121,7 +122,7 @@ ol > li:before {
 	font-weight: 500;
 	line-height: 1.5em;
 	text-align: right;
-	color: $color-black;
+	color: $color-warmgray-20;
 }
 ul > li:before {
 	margin-top: 0.25em;
@@ -158,7 +159,7 @@ blockquote {
     border-left: 0.25em solid $color-gray-90;
     font-style: italic;
     font-weight: 400;
-    color: $color-blue-30;
+    color: $color-warmgray-20;
     background: $color-gray-98;
 }
 blockquote p {
@@ -172,16 +173,16 @@ blockquote p:last-child {
 }
 em, i {
 	font-style: italic;
-	color: $color-blue-15;
+	color: $color-warmgray-20;
 }
 strong, b {
 	font-weight: 700;
-	color: $color-blue-15;
+	color: $color-warmgray-20;
 }
 
 small {
     font-size: 0.9em;
-    color: $color-blue-30;
+    color: $color-warmgray-30;
 }
 
 
@@ -194,7 +195,7 @@ dl dt {
   	font-size: 0.75em;
   	line-height: 1.25em;
     font-weight: 700;
-    color: $color-black;
+    color: $color-warmgray-20;
     margin-bottom: 0.334em;
 }
 dl dt:before {
@@ -254,7 +255,7 @@ pre .lines {
 pre .lines .line {
 	display: block;
 	padding-right: 0.334em;
-    color: $color-blue-30;
+    color: $color-warmgray-30;
 }
 
 pre code, pre tt {
@@ -282,7 +283,7 @@ kbd {
     margin-bottom: 0.5em;
     padding: 1px 8px;
     border: $color-gray-90 1px solid;
-    color: $color-blue-30;
+    color: $color-warmgray-30;
     text-shadow: $color-white 0 1px 0;
     font-size: 0.9em;
     font-weight: bold;
@@ -312,7 +313,7 @@ table th {
 	font-size: 0.75em;
 	line-height: 1.25em;
 	padding: 0.667em;
-	color: $color-black;
+	color: $color-warmgray-20;
 }
 table td:after {
 	position: absolute;
@@ -361,7 +362,7 @@ img[src$="#full"] {
   }
 
   figcaption {
-    color: $color-blue-60;
+    color: $color-warmgray-50;
     text-align: center;
     max-width: 32em;
     margin: auto;
@@ -382,7 +383,7 @@ img[src$="#full"] {
   width: 75vw;
 
   figcaption {
-    color: $color-blue-60;
+    color: $color-warmgray-50;
     text-align: center;
     max-width: 32em;
     margin: auto;
@@ -488,7 +489,7 @@ img[src$="#full"] {
 #blog-header {
 	position: relative;
 	padding: 6em 0;
-	text-align: center;
+	text-align: left;
 }
 #blog-header:after {
 	position: absolute;
@@ -502,7 +503,7 @@ img[src$="#full"] {
 }
 #blog-header.has-cover {
 	padding: 9em 0 10em;
-	background: $color-black;
+	background: $color-warmgray-20;
 	overflow: hidden;
 	text-shadow: 0 1px 2px rgba(0,0,0,0.1);
 }
@@ -525,7 +526,7 @@ img[src$="#full"] {
 	left: 0;
 	top: 0;
 	z-index: 5;
-	background: no-repeat scroll center center / cover $color-black;
+	background: no-repeat scroll center center / cover $color-warmgray-20;
 	animation: 0.5s ease-in forwards fadein;
 }
 .blog-cover:after {
@@ -563,7 +564,7 @@ img[src$="#full"] {
 	text-decoration: none;
 }
 .home-template .blog-name {
-	font-size: 2.4em;
+	font-size: 2.75em;
 }
 .has-cover .blog-name {
 	color: $color-white;
@@ -577,10 +578,11 @@ img[src$="#full"] {
 	position: relative;
 	display: block;
 	z-index: 10;
-	margin: 0.25em 0;
+	margin: 0.5em 0;
 	padding: 0;
 	font-size: 1em;
 	line-height: 1.4em;
+  color: $color-warmgray-50;
 }
 .home-template .blog-description {
 	font-size: 1.25em;
@@ -644,7 +646,7 @@ img[src$="#full"] {
 	font-size: 0.75em;
 	line-height: 1.667em;
 	text-shadow: none;
-	color: $color-blue-60;
+	color: $color-warmgray-50;
 	cursor: pointer;
 	background: $color-white;
 	transition: color,border-color ease 0.3s;
@@ -714,7 +716,6 @@ img[src$="#full"] {
 }
 #menu .close-button:hover,
 #menu .close-button:focus {
-	transform: rotate(180deg);
 	border-color: $primary-color;
 }
 #menu .close-button:after,
@@ -726,7 +727,7 @@ img[src$="#full"] {
 	top: 50%;
 	margin-left: -0.5em;
 	content: '';
-	background: $color-blue-60;
+	background: $color-warmgray-50;
 	transition: all ease 0.3s;
 }
 #menu .close-button:hover:after,
@@ -792,14 +793,14 @@ img[src$="#full"] {
 #menu li a {
 	display: block;
 	padding: 1.25em 1.5em;
-	color: $color-blue-15;
+	color: $color-warmgray-20;
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	font-weight: 400;
 }
 #menu li a:hover,
 #menu li a:focus {
-	color: $color-black;
+	color: $color-warmgray-20;
 	background: rgba(0,0,0,0.05);
 }
 #menu li a i {
@@ -809,7 +810,7 @@ img[src$="#full"] {
 	color: inherit;
 }
 #menu li.active a {
-	color: $color-black;
+	color: $color-warmgray-20;
 	font-weight: 500;
 }
 
@@ -978,7 +979,7 @@ img[src$="#full"] {
 }
 #post-header.has-cover {
 	padding: 16em 0 2em;
-	background: $color-black;
+	background: $color-warmgray-20;
 	overflow: hidden;
 	text-shadow: 0 1px 2px rgba(0,0,0,0.1);
 }
@@ -989,7 +990,7 @@ img[src$="#full"] {
 	left: 0;
 	top: 0;
 	z-index: 5;
-	background: no-repeat scroll center center / cover $color-black;
+	background: no-repeat scroll center center / cover $color-warmgray-20;
 	animation: 0.5s ease-in forwards fadein;
 }
 .post-cover:after {
@@ -1015,7 +1016,7 @@ img[src$="#full"] {
 	line-height: 1em;
 	font-weight: 700;
 	text-indent: -1px;
-	color: $color-black;
+	color: $color-warmgray-20;
 }
 .has-cover .post-title {
 	color: $color-white;
@@ -1033,7 +1034,7 @@ img[src$="#full"] {
 	font-size: 0.75em;
 	font-weight: 400;
 	line-height: 1.334em;
-  color: $color-blue-60;
+  color: $color-warmgray-50;
 }
 .has-cover .post-meta {
 	color: $color-white;
@@ -1111,7 +1112,7 @@ img[src$="#full"] {
 }
 .post-share a:hover,
 .post-share a:focus {
-	background-color: $color-blue-15;
+	background-color: $color-warmgray-20;
 }
 .post-share a i {
 	color: inherit;
@@ -1283,7 +1284,7 @@ img[src$="#full"] {
 	border: 1px solid $color-blue-80;
 	font-size: 0.75em;
 	line-height: 1.334em;
-	color: $color-blue-60;
+	color: $color-warmgray-50;
 	text-align: center;
 	cursor: pointer;
 	transition: all ease 0.3s;
@@ -1333,7 +1334,7 @@ img[src$="#full"] {
 			border-radius: 4em 0 0 4em;
 
 			&:hover {
-				border-color: $color-blue-60;
+				border-color: $color-warmgray-50;
 			}
 
 			&:focus {
@@ -1468,7 +1469,7 @@ img[src$="#full"] {
 	line-height: 1.5em;
 	text-align: center;
 	text-decoration: none;
-	color: $color-blue-60;
+	color: $color-warmgray-50;
 	transition: all ease 0.3s;
 	border-radius: 2em;
 }
@@ -1550,7 +1551,7 @@ img[src$="#full"] {
 
 @media only screen and (max-width: 640px) {
 	html {
-	    font-size: 50%;
+	    font-size: 54%;
 	}
 	.post-share,
 	.post-tags {
