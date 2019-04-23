@@ -12,7 +12,9 @@
    ========================================================================== */
 
 $font-body: "Public Sans", "Franklin", "Franklin Gothic", Helvetica, Arial, sans-serif;
-$font-titling: 'Recoleta-Bold', Palatino, Garamond, "Times New Roman", Times, serif;
+$font-titling: 'Recoleta', Palatino, Garamond, "Times New Roman", Times, serif;
+
+$col-width: 42em;
 
 @supports (flex-wrap: wrap) {
     body {
@@ -63,22 +65,25 @@ a:focus {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: $font-titling;
+	font-family: $font-body;
 	text-rendering: optimizeLegibility;
-  font-weight: normal !important;
+  font-weight: normal;
 	color: $color-warmgray-20;
 }
 
 h1 {
+  font-family: $font-titling;
 	font-size: 2em;
 	line-height: 1em;
 	text-indent: -1px;
+  font-weight: 700;
 	margin: 1em 0 1em;
   color: $color-warmgray-30;
 }
 
 h2 {
 	font-size: 1.75em;
+  font-weight: 300;
 	line-height: 1.111em;
 	text-indent: -1px;
 	margin: 1.143em 0 1.143em;
@@ -94,10 +99,6 @@ h4 {
 	font-size: 1.25em;
 	line-height: 1.2em;
 	margin: 1.2em 0 1.2em;
-}
-
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-	font-weight: inherit;
 }
 
 p {
@@ -367,7 +368,7 @@ img[src$="#full"] {
   figcaption {
     color: $color-warmgray-50;
     text-align: center;
-    max-width: 32em;
+    max-width: $col-width;
     margin: auto;
   	font-size: 0.75em;
   	line-height: 1.25em;
@@ -388,7 +389,7 @@ img[src$="#full"] {
   figcaption {
     color: $color-warmgray-50;
     text-align: center;
-    max-width: 32em;
+    max-width: $col-width;
     margin: auto;
   	font-size: 0.75em;
   	line-height: 1.25em;
@@ -496,11 +497,11 @@ img[src$="#full"] {
 }
 #blog-header:after {
 	position: absolute;
-	width: 32em;
+	width: $col-width;
 	height: 1px;
 	left: 50%;
 	bottom: 0;
-	margin-left: -16em;
+	margin-left: -($col-width / 2);
 	content: '';
 	background: $color-gray-90;
 }
@@ -583,7 +584,8 @@ img[src$="#full"] {
 	z-index: 10;
 	margin: 0.5em 0;
 	padding: 0;
-	font-size: 1em;
+	font-size: 1.1em;
+  font-weight: 500;
 	line-height: 1.4em;
   color: $color-warmgray-50;
 }
@@ -615,9 +617,8 @@ img[src$="#full"] {
 	display: block;
 }
 
-
 .inner {
-	max-width: 32em;
+	max-width: $col-width;
 	margin: 0 auto;
 	padding: 0 2em;
 }
@@ -885,11 +886,11 @@ img[src$="#full"] {
 }
 #blog-author:after {
 	position: absolute;
-	width: 32em;
+	width: $col-width;
 	height: 1px;
 	left: 50%;
 	bottom: 0;
-	margin-left: -16em;
+	margin-left: -($col-width / 2);
 	content: '';
 	background: $color-gray-90;
 }
@@ -930,11 +931,11 @@ img[src$="#full"] {
 }
 .container .post:after {
 	position: absolute;
-	width: 32em;
+	width: $col-width;
 	height: 1px;
 	left: 50%;
 	bottom: 0;
-	margin-left: -16em;
+	margin-left: -($col-width / 2);
 	content: '';
 	background: $color-gray-90;
 }
@@ -963,11 +964,11 @@ img[src$="#full"] {
 }
 .page-template #footer:after {
 	position: absolute;
-	width: 32em;
+	width: $col-width;
 	height: 1px;
 	left: 50%;
 	top: 0;
-	margin-left: -16em;
+	margin-left: -($col-width / 2);
 	content: '';
 	background: $color-gray-90;
 }
@@ -1027,7 +1028,6 @@ img[src$="#full"] {
 .post-title a {
 	text-decoration: none;
 	color: inherit;
-	font-weight: inherit;
 }
 .post-meta {
 	position: relative;
@@ -1136,7 +1136,7 @@ img[src$="#full"] {
 .post-tags {
 	max-width: 75%;
 	float: left;
-	font-family: 'Fira Sans', sans-serif;
+	font-family: $font-body;
 }
 .post-tags a {
 	display: inline-block;
@@ -1250,7 +1250,7 @@ img[src$="#full"] {
 	border-bottom: 1px solid $color-gray-90;
 	clear: both;
   text-align: center;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: $font-body;
 }
 .post-authors-info {
   margin: 0 0 0.334em;
@@ -1452,11 +1452,11 @@ img[src$="#full"] {
 }
 .pagination:after {
 	position: absolute;
-	width: 32em;
+	width: $col-width;
 	height: 1px;
 	left: 50%;
 	bottom: 0;
-	margin-left: -16em;
+	margin-left: -($col-width / 2);
 	content: '';
 	background: $color-gray-90;
 }
@@ -1537,7 +1537,7 @@ img[src$="#full"] {
 	}
 	.menu-active #wrapper {
 		padding-right: 0;
-		transform: translate3d(-16em,0,0);
+		transform: translate3d(-($col-width / 2),0,0);
 	}
 	.blog-logo,
 	.nav-button {
