@@ -11,6 +11,9 @@
    Basics
    ========================================================================== */
 
+$font-body: "Public Sans", "Franklin", "Franklin Gothic", Helvetica, Arial, sans-serif;
+$font-titling: 'Recoleta-Bold', Palatino, Garamond, "Times New Roman", Times, serif;
+
 @supports (flex-wrap: wrap) {
     body {
     	display: flex;
@@ -33,7 +36,7 @@ html.menu-active,
 }
 
 body {
-	font: 400 1.8em / 1.65em "Libre Baskerville", Garamond, Palatino, "Times New Roman", serif;;
+	font: 400 1.8em / 1.65em $font-body;
 	color: $color-warmgray-20;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
@@ -44,7 +47,7 @@ input,
 button,
 select,
 textarea {
-	font-family: "Libre Baskerville", Garamond, Palatino, "Times New Roman", serif;;
+	font-family: $font-body;
 	transition: all ease-out 0.2s;
 }
 
@@ -60,7 +63,7 @@ a:focus {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Recoleta-Bold', "Libre Baskerville", Garamond, Palatino, "Times New Roman", serif;;
+	font-family: $font-titling;
 	text-rendering: optimizeLegibility;
   font-weight: normal !important;
 	color: $color-warmgray-20;
@@ -557,7 +560,7 @@ img[src$="#full"] {
 	z-index: 10;
 	margin: 0;
 	padding: 0;
-	font-family: "Recoleta-Bold", "Libre Baskerville", Garamond, Palatino, "Times New Roman", serif;
+	font-family: $font-titling;
 	font-weight: 700;
 	font-size: 2em;
 	line-height: 1em;
@@ -642,7 +645,7 @@ img[src$="#full"] {
 	margin-bottom: 1em;
 	padding: 0.5em 1.25em;
 	border: 1px solid $color-blue-80;
-	font-family: "Libre Baskerville", Garamond, Palatino, "Times New Roman", serif;
+	font-family: $font-body;
 	font-size: 0.75em;
 	line-height: 1.667em;
 	text-shadow: none;
@@ -691,7 +694,7 @@ img[src$="#full"] {
 	border-left: 1px solid $color-gray-90;
 	z-index: 400;
 	overflow: hidden;
-	font-family: "Libre Baskerville", Garamond, Palatino, "Times New Roman", serif;
+	font-family: $font-body;
 	box-shadow: inset -2px 0 7px rgba(0,0,0,0.1);
 	transform: translate3d(16em,0,0);
 	transition: all ease-out 0.25s;
@@ -846,7 +849,7 @@ img[src$="#full"] {
 #footer {
 	position: relative;
 	z-index: 20;
-	font-family: "Libre Baskerville", Garamond, Palatino, "Times New Roman", serif;
+	font-family: $font-body;
 	line-height: 1em;
 	padding-bottom: 6em;
 }

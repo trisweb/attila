@@ -20,13 +20,5 @@
 */
 /* @import must be at top of file, otherwise CSS will not work */
 @import url("//hello.myfonts.net/count/36d7b2");
-@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700');
-
-@font-face {
-    font-family: 'Recoleta-Bold';
-    src: url('/assets/webfonts/36D7B2_0_0.eot');
-    src: url('/assets/webfonts/36D7B2_0_0.eot?#iefix') format('embedded-opentype'),
-         url('/assets/webfonts/36D7B2_0_0.woff2') format('woff2'),
-         url('/assets/webfonts/36D7B2_0_0.woff') format('woff'),
-         url('/assets/webfonts/36D7B2_0_0.ttf') format('truetype');
-}
+@import url("/assets/fonts/Recoleta/Recoleta.css");
+@import url("/assets/fonts/PublicSans/PublicSans.css");
